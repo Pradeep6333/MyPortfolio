@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" type="image/avif" href="Toyota-LogoC(590x370).avif">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            height: 15%;
+            padding: 10px 100px;
+            
+
+        }
+
+        header img {
+            height: 50px;
+
+        }
+
+        header h1 {
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            margin-right: 0;
+            margin-left: 500px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: whitesmoke;
+        }
+
+        nav a.active , nav a.active{
+            color: rgb(242, 92, 84);
+        }
+        main{
+            height: 85%;
+        }
+        .poster {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .headleft{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headleft">
+        
+            <img src="TLogo.jpeg" alt="Toyota Logo">
+            <h1>FORTUNE TOYOTA</h1>
+        </div>
+
+        <nav>
+            <a class="active" href="home.html">Home</a>
+            <a class="" href="cars.html">Cars</a>
+            <a class="" href="services.html">Service</a>
+            <a class="" href="booktd.html">Book a Test Drive</a>
+            <a class="" href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+    <main>
+        <img src="Lead-Gen_Banner_01.png" class="poster">
+    </main>
+
+
+
+</body>
+
+</html>

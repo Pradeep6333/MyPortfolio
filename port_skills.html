@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 15%;
+            align-items: center;
+            padding: 25px 50px;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: rgb(242, 92, 84);
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 6px 18px rgb(227, 227, 227);
+            margin-right: 12px;
+        }
+
+        header h2 {
+            letter-spacing: 6px;
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: small;
+            padding: 5px 10px;
+            border-radius: 3px;
+            background-color: white;
+            transition: 0.3s;
+            box-shadow: 0 3px 6px rgb(213, 213, 213);
+        }
+
+        nav a:hover {
+            color: rgb(242, 92, 84);
+            box-shadow: 0 3px 10px gray;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 70%;
+            background-color: rgb(233, 237, 242);
+
+        }
+
+        nav a.active {
+            color: rgb(242, 92, 84);
+
+        }
+
+        footer {
+            display: flex;
+            height: 15%;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        main h1 {
+            color: #182f48;
+            letter-spacing: 3px;
+            line-height: 1.2;
+            font-family: 'playfair display', serif;
+            font-weight: bold;
+            font-size: xxx-large;
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 70%;
+            padding: 30px;
+            background-color: rgb(233, 237, 242);
+        }
+        .skills{
+            display: flex;
+            flex-direction:row ;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px 2px 10px rgb(192,192,192);
+            gap:30px;
+            border-radius: 10px;
+
+        }
+        .skill img{
+            height: 150px;
+            width: 200px;
+            border-radius: 100%;
+            transition: 0.5s;
+            box-shadow: 2px 2px 10px rgb(200, 200, 200);
+        }
+        .skill img:hover{
+            transform: scale(1.06);
+            box-shadow: 2px 2px 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <button class="logo"><img width="35" src="PF Logo.png" alt="Logo"></button>
+            <h2>PORTFOLIO</h2>
+        </div>
+        <nav>
+            <a class="" href="index.html">Home</a>
+            <a class="" href="port_about.html">About</a>
+            <a class="active" href="port_skills.html">Skills</a>
+            <a class="" href="port_projects.html">Projects</a>
+            <a class="" href="port_contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Technical</br>Skills</h1>
+        <div class="skills">
+            <div class="skill">
+                <img src="Python_pic.png" alt="Python">
+            </div>
+            <div class="skill">
+                <img src="C_pic.png" alt="C">
+            </div>
+            <div class="skill">
+                <img src="Java_pic.png" alt="Java">
+            </div>
+            <div class="skill">
+                <img src="Html_pic.jpeg" alt="Html">
+            </div>
+            <div class="skill">
+                <img src="Css_pic.jpeg" alt="Css">
+            </div>
+            <div class="skill">
+                <img src="Js_pic.jpg" alt="Js">
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; My Portfolio</p>
+    </footer>
+
+
+</body>
+
+</html>
