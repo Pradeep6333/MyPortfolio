@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Projects</title>
+    <link rel="icon" type="img/png" href="PF Logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -13,7 +14,6 @@
             padding: 0;
             font-family: sans-serif;
         }
-
 
         body {
             display: flex;
@@ -27,6 +27,10 @@
             height: 15%;
             align-items: center;
             padding: 25px 50px;
+            position: fixed;
+            background-color:white;
+            width: 100%;
+            top: 0;
         }
 
         .title {
@@ -42,8 +46,6 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            color: rgb(242, 92, 84);
-            background: #fff;
             border-radius: 6px;
             box-shadow: 0 6px 18px rgb(227, 227, 227);
             margin-right: 12px;
@@ -56,7 +58,7 @@
 
         nav {
             display: flex;
-            gap: 22px;
+            gap: 20px;
         }
 
         header nav a {
@@ -71,6 +73,7 @@
             box-shadow: 0 3px 6px rgb(213, 213, 213);
         }
 
+
         nav a:hover {
             color: rgb(242, 92, 84);
             box-shadow: 0 3px 10px gray;
@@ -81,22 +84,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 70%;
-            justify-content: flex-start;
-            align-items: flex-start;
+            height: 70vh;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
             background-color: rgb(233, 237, 242);
 
-        }
-
-        main h1 {
-            color: #182f48;
-            letter-spacing: 3px;
-            line-height: 1.2;
-            font-family: 'playfair display', serif;
-            font-weight: bold;
-            font-size: xxx-large;
-            margin-bottom: 30px;
-            margin-left: 35px;
         }
 
         nav a.active {
@@ -106,11 +98,15 @@
 
         footer {
             display: flex;
-            height: 15%;
+            height: 15vh;
             padding: 30px;
             justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            width: 100%;
         }
-
         .projects {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -146,6 +142,17 @@
         .projects .p img {
             border-radius: 10px;
         }
+         main h1 {
+            color: #182f48;
+            letter-spacing: 3px;
+            line-height: 1.2;
+            font-family: 'playfair display', serif;
+            font-weight: bold;
+            font-size: xxx-large;
+            margin-bottom: 30px;
+            margin-right: 80%;
+        }
+
     </style>
 </head>
 
@@ -174,19 +181,16 @@
                     My Portfolio</a></div>
 
             <div class="p"><img src="Toyota_pic.png" alt="Toyota Showroom" width="100px" height="100px"><a
-                    href="Car_showroom_fwd/home.html">
+                    href="">
                     Car Showroom</a></div>
 
             <div class="p"><img src="p1.png" alt="Restaurant" width="100px" height="100px"><a
-                    href="restaurant.html">Restaurant Menu</a></div>
+                    href="">Restaurant Menu</a></div>
 
-            <div class="p"><img src="p2.jpg" alt="FeedBackForm" width="100px" height="100px"><a href="clgfeedback.html">
+            <div class="p"><img src="data:image/png;base64,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" alt="FeedBackForm" width="100px" height="100px"><a href="">
                     FeedBack Form</a></div>
         </div>
-
-
     </main>
-
 
     <footer>
         <p>&copy; My Portfolio</p>
