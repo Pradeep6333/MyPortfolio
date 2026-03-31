@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact</title>
+    <link rel="icon" type="img/png" href="PF Logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -26,6 +27,10 @@
             height: 15%;
             align-items: center;
             padding: 25px 50px;
+            position: fixed;
+            background-color:white;
+            width: 100%;
+            top: 0;
         }
 
         .title {
@@ -41,8 +46,6 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            color: rgb(242, 92, 84);
-            background: #fff;
             border-radius: 6px;
             box-shadow: 0 6px 18px rgb(227, 227, 227);
             margin-right: 12px;
@@ -55,7 +58,7 @@
 
         nav {
             display: flex;
-            gap: 22px;
+            gap: 20px;
         }
 
         header nav a {
@@ -70,6 +73,7 @@
             box-shadow: 0 3px 6px rgb(213, 213, 213);
         }
 
+
         nav a:hover {
             color: rgb(242, 92, 84);
             box-shadow: 0 3px 10px gray;
@@ -80,9 +84,11 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            height: 70%;
-            padding: 30px;
+            height: 70vh;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
             background-color: rgb(233, 237, 242);
+
         }
 
         nav a.active {
@@ -92,11 +98,15 @@
 
         footer {
             display: flex;
-            height: 15%;
+            height: 15vh;
             padding: 30px;
             justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            width: 100%;
         }
-
         main h1 {
             color: #182f48;
             letter-spacing: 3px;
@@ -130,12 +140,8 @@
         hr {
             border: none;
             border-top: 3px solid rgb(242, 92, 84);
-            width: 90%;
-            margin: 20px 0;
-        }
-
-        .details {
             width: 100%;
+            margin: 20px 0;
         }
 
         .Contact {
@@ -146,6 +152,13 @@
             cursor: pointer;
             padding: 6px 8px;
         }
+        .details{
+            width: 100%;
+            padding: 0 30px;
+        }
+        
+
+
     </style>
 </head>
 
@@ -158,17 +171,15 @@
         </div>
         <nav>
             <a class="" href="index.html">Home</a>
-            <a class="" href="port_about.html">About</a>
-            <a class="" href="port_skills.html">Skills</a>
-            <a class="" href="port_projects.html">Projects</a>
-            <a class="active" href="port_contact.html">Contact</a>
+            <a class="" href="about.html">About</a>
+            <a class="" href="skills.html">Skills</a>
+            <a class="" href="projects.html">Projects</a>
+            <a class="active" href="contact.html">Contact</a>
         </nav>
-
     </header>
 
     <main>
-
-        <h1>Contact<br>
+         <h1>Contact<br>
             Me</h1>
 
         <div class="Contact">
@@ -195,11 +206,7 @@
             <p>Phone:8989787800</p>
         </div>
 
-
-
-
     </main>
-
 
     <footer>
         <p>&copy; My Portfolio</p>
