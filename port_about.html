@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About</title>
+    <link rel="icon" type="img/png" href="PF Logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -26,6 +27,10 @@
             height: 15%;
             align-items: center;
             padding: 25px 50px;
+            position: fixed;
+            background-color:white;
+            width: 100%;
+            top: 0;
         }
 
         .title {
@@ -41,8 +46,6 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            color: rgb(242, 92, 84);
-            background: #fff;
             border-radius: 6px;
             box-shadow: 0 6px 18px rgb(227, 227, 227);
             margin-right: 12px;
@@ -55,7 +58,7 @@
 
         nav {
             display: flex;
-            gap: 22px;
+            gap: 20px;
         }
 
         header nav a {
@@ -70,6 +73,7 @@
             box-shadow: 0 3px 6px rgb(213, 213, 213);
         }
 
+
         nav a:hover {
             color: rgb(242, 92, 84);
             box-shadow: 0 3px 10px gray;
@@ -80,9 +84,12 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            height: 70%;
-            padding: 30px;
+            height: 70vh;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
             background-color: rgb(233, 237, 242);
+            gap: 10px;
+
         }
 
         nav a.active {
@@ -92,11 +99,30 @@
 
         footer {
             display: flex;
-            height: 15%;
+            height: 15vh;
             padding: 30px;
             justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            width: 100%;
         }
-
+        .abt{
+            line-height: 2;
+            font-weight:500;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgb(192, 192, 192);
+            padding: 20px;
+            padding-left: 100px;
+            margin: 0px 0px;
+            width: 90%;
+            transition: 0.6s;
+            margin-left:50px ;
+        }
+        .abt:hover{
+            transform: scale(1.02);
+        }
         main h1 {
             color: #182f48;
             letter-spacing: 3px;
@@ -107,22 +133,9 @@
             margin-bottom: 30px;
             margin-left: 35px;
         }
+        
 
-        .abt{
-            line-height: 2;
-            font-weight:500;
-            border-radius: 15px;
-            box-shadow: 2px 2px 10px rgb(192, 192, 192);
-            padding: 20px;
-            padding-left: 100px;
-            margin: 0px 0px;
-            width: 100%;
-            transition: 0.6s;
 
-        }
-        .abt:hover{
-            transform: scale(1.02);
-        }
     </style>
 </head>
 
@@ -140,11 +153,9 @@
             <a class="" href="port_projects.html">Projects</a>
             <a class="" href="port_contact.html">Contact</a>
         </nav>
-
     </header>
 
     <main>
-
         <h1>About<br>
             Me</h1>
 
@@ -159,14 +170,13 @@
             <p>Passout year: 2029</p>
             
         </div>
+    </main>
 
-        </main>
+    <footer>
+        <p>&copy; My Portfolio</p>
+    </footer>
 
 
-        <footer>
-            <p>&copy; My Portfolio</p>
-        </footer>
-        
+</body>
 
-    </body>
 </html>
